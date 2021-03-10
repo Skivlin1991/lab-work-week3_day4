@@ -1,7 +1,7 @@
 from flask import render_template
 
 from app import app
-from app.models.todo_list import orders
+from app.models.orders_app import orders
 
 @app.route('/orders')
 def index():
@@ -9,3 +9,4 @@ def index():
         'index.html',
         title = 'Better Than Amazon', 
         orders = orders)
+
