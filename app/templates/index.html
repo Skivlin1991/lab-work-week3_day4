@@ -11,7 +11,9 @@
     {% for order in orders %}
         <div>
             <p>
-                {{order.name}}: <b> {{order.date}} </b> <b> {{order.quantity}} </b>
+                <a href="orders/{{loop.index0}}">
+                    {{order.name}}: <b> {{order.date}} </b> <b> {{order.quantity}} </b>
+                </a>
             </p>
         </div>
     {% endfor %}

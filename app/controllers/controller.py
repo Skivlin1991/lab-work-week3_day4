@@ -10,3 +10,14 @@ def index():
         title = 'Better Than Amazon', 
         orders = orders)
 
+@app.route('/orders/<index>')
+def ordered(index):
+    return render_template(
+        'order.html',
+        index = index,
+        orders = orders,
+        ind_num = int(index)
+        
+
+        )
+
